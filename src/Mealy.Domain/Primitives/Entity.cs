@@ -9,15 +9,9 @@ public abstract class Entity : IEquatable<Entity>
     Id = id;
   }
 
-  public static bool operator ==(Entity? first, Entity? second)
-  {
-    return first is not null && second is not null && first.Equals(second);
-  }
+  public static bool operator ==(Entity? first, Entity? second) => first is not null && second is not null && first.Equals(second);
 
-  public static bool operator !=(Entity? first, Entity? second)
-  {
-    return !(first == second);
-  }
+  public static bool operator !=(Entity? first, Entity? second) => !(first == second);
 
   public bool Equals(Entity? other)
   {
@@ -54,8 +48,5 @@ public abstract class Entity : IEquatable<Entity>
     return Id == entity.Id;
   }
 
-  public override int GetHashCode()
-  {
-    return Id.GetHashCode() * 37;
-  }
+  public override int GetHashCode() => Id.GetHashCode() * 37;
 }
