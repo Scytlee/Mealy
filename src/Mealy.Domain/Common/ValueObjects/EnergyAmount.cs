@@ -6,7 +6,7 @@ namespace Mealy.Domain.Common.ValueObjects;
 
 public sealed class EnergyAmount : ValueObject<double>
 {
-  public EnergyAmount(double value) : base(value) {}
+  private EnergyAmount(double value) : base(value) {}
   
   public static Result<EnergyAmount> Create(double value)
   {
