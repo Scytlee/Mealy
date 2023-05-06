@@ -1,5 +1,4 @@
-﻿using Mealy.Domain.Common.Interfaces;
-using Mealy.Domain.Common.Primitives;
+﻿using Mealy.Domain.Common.Primitives;
 
 namespace Mealy.Domain.Products.ValueObjects;
 
