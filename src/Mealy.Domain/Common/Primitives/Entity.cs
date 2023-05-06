@@ -1,6 +1,6 @@
-﻿using Mealy.Domain.Interfaces;
+﻿using Mealy.Domain.Common.Interfaces;
 
-namespace Mealy.Domain.Primitives;
+namespace Mealy.Domain.Common.Primitives;
 
 public abstract class Entity<TPrimaryKey> : IEquatable<Entity<TPrimaryKey>>
   where TPrimaryKey : ValueObject, IEntityPrimaryKey

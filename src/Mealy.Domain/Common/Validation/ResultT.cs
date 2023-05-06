@@ -1,4 +1,4 @@
-﻿namespace Mealy.Domain.Shared;
+﻿namespace Mealy.Domain.Common.Validation;
 
 public class Result<TValue> : Result
 {

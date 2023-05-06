@@ -1,4 +1,4 @@
-﻿namespace Mealy.Domain.Primitives;
+﻿namespace Mealy.Domain.Common.Primitives;
 
 public abstract class ValueObject : IEquatable<ValueObject>
 {

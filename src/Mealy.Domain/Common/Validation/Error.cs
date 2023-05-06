@@ -1,4 +1,4 @@
-﻿namespace Mealy.Domain.Shared;
+﻿namespace Mealy.Domain.Common.Validation;
 
 public sealed class Error : IEquatable<Error>
 {
