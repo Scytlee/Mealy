@@ -14,6 +14,10 @@ public sealed class EnergyAmount : ValueObject<double>
     {
       return Result.Failure<EnergyAmount>(DomainErrors.EnergyAmount.Negative);
     }
+    if (value > 900)
+    {
+      return Result.Failure<EnergyAmount>(DomainErrors.EnergyAmount.TooHigh);
+    }
     
     return new EnergyAmount(value);
   }
