@@ -1,19 +1,22 @@
-﻿namespace Mealy.Domain.Primitives;
+﻿using Mealy.Domain.Interfaces;
 
-public abstract class Entity : IEquatable<Entity>
+namespace Mealy.Domain.Primitives;
+
+public abstract class Entity<TPrimaryKey> : IEquatable<Entity<TPrimaryKey>>
+  where TPrimaryKey : ValueObject, IEntityPrimaryKey
 {
-  public long Id { get; private init; }
+  public TPrimaryKey Id { get; }
   
-  protected Entity(long id)
+  protected Entity(TPrimaryKey id)
   {
     Id = id;
   }
 
-  public static bool operator ==(Entity? first, Entity? second) => first is not null && second is not null && first.Equals(second);
+  public static bool operator ==(Entity<TPrimaryKey>? first, Entity<TPrimaryKey>? second) => first is not null && second is not null && first.Equals(second);
 
-  public static bool operator !=(Entity? first, Entity? second) => !(first == second);
+  public static bool operator !=(Entity<TPrimaryKey>? first, Entity<TPrimaryKey>? second) => !(first == second);
 
-  public bool Equals(Entity? other)
+  public bool Equals(Entity<TPrimaryKey>? other)
   {
     if (other is null)
     {
@@ -40,7 +43,7 @@ public abstract class Entity : IEquatable<Entity>
       return false;
     }
 
-    if (obj is not Entity entity)
+    if (obj is not Entity<TPrimaryKey> entity)
     {
       return false;
     }
