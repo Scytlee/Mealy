@@ -24,7 +24,7 @@ public static class DomainErrors
   public static class EntityVersion
   {
     public static readonly Error NonPositive = new(
-      "Version.NonPositive",
+      "EntityVersion.NonPositive",
       "Version cannot be non-positive.");
   }
 }
