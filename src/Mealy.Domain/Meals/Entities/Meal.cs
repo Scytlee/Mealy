@@ -4,10 +4,8 @@ using Mealy.Domain.Meals.ValueObjects;
 
 namespace Mealy.Domain.Meals.Entities;
 
-public sealed class Meal : Entity<MealId>, IAuditableEntity
+public sealed class Meal : VersionedEntity<MealId>, IAuditableEntity
 {
-  public EntityVersion Version { get; set; }
-  public bool IsLatestVersion { get; set; }
   public MealName Name { get; set; }
   public Recipe? Recipe { get; set; }
   public MealType Type { get; set; }
@@ -23,10 +21,8 @@ public sealed class Meal : Entity<MealId>, IAuditableEntity
     Recipe? recipe, 
     MealType type, 
     MealTypeId typeId, 
-    EnergyAmount energyAmount) : base(id)
+    EnergyAmount energyAmount) : base(id, version, isLatestVersion)
   {
-    Version = version;
-    IsLatestVersion = isLatestVersion;
     Name = name;
     Recipe = recipe;
     Type = type;
