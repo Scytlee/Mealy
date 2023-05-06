@@ -13,4 +13,18 @@ public static class DomainErrors
       "EnergyAmount.TooHigh",
       "Energy amount cannot be higher than 900 calories.");
   }
+  
+  public static class ProductAmount
+  {
+    public static readonly Error NonPositive = new(
+      "ProductAmount.NonPositive",
+      "Product amount cannot be non-positive.");
+  }
+
+  public static class EntityVersion
+  {
+    public static readonly Error NonPositive = new(
+      "Version.NonPositive",
+      "Version cannot be non-positive.");
+  }
 }
