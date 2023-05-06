@@ -1,6 +1,6 @@
-﻿using Mealy.Domain.Common.Errors;
-using Mealy.Domain.Common.Primitives;
+﻿using Mealy.Domain.Common.Primitives;
 using Mealy.Domain.Common.Validation;
+using Mealy.Domain.Products.Errors;
 
 namespace Mealy.Domain.Products.ValueObjects;
 
