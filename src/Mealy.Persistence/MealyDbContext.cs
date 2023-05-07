@@ -2,6 +2,7 @@
 using Mealy.Persistence.Meals.Converters;
 using Mealy.Persistence.Plans.Converters;
 using Mealy.Persistence.Products.Converters;
+using Mealy.Persistence.ShoppingLists.Converters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -28,6 +29,7 @@ public sealed class MealyDbContext : DbContext
     builder.ConfigureMealConventions();
     builder.ConfigureProductConventions();
     builder.ConfigurePlanConventions();
+    builder.ConfigureShoppingListConventions();
     
     base.ConfigureConventions(builder);
   }
