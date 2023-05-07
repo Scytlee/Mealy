@@ -4,5 +4,5 @@ namespace Mealy.Domain.Meals.ValueObjects;
 
 public sealed class MealTypeId : ValueObject<long>, IEntityPrimaryKey
 {
-  private MealTypeId(long value) : base(value) {}
+  public MealTypeId(long value) : base(value) {}
 }

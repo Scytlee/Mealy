@@ -3,6 +3,6 @@
 namespace Mealy.Domain.Meals.ValueObjects;
 
 public sealed class MealIngredientId : ValueObject<long>, IEntityPrimaryKey
-{
-  private MealIngredientId(long value) : base(value) {}
+{ 
+  public MealIngredientId(long value) : base(value) {}
 }
