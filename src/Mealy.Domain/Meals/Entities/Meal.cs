@@ -15,6 +15,8 @@ public sealed class Meal : VersionedEntity<MealId>, IAuditableEntity
   public EnergyAmount EnergyAmount { get; set; }
   public DateTime CreatedOnUtc { get; set; }
   public IReadOnlyCollection<MealIngredient> Ingredients => _ingredients;
+  
+  private Meal() : base(default, default, default) {}
 
   public Meal(
     MealId id, 

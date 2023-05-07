@@ -14,6 +14,8 @@ public class MealIngredient : Entity<MealIngredientId>
   public ProductId ProductId { get; private set; }
   public ProductAmount Amount { get; private set; }
   public EnergyAmount EnergyAmount { get; private set; }
+  
+  private MealIngredient() : base(default) {}
 
   public MealIngredient(
     MealIngredientId id, 

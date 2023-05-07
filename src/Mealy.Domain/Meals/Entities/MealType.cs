@@ -8,6 +8,8 @@ public sealed class MealType : Entity<MealTypeId>
   public MealTypeName Name { get; private set; }
   public TimeOnly DefaultTime { get; private set; }
   
+  private MealType() : base(default) {}
+  
   public MealType(
     MealTypeId id, 
     MealTypeName name,
