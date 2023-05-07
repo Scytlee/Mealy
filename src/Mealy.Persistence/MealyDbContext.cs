@@ -1,5 +1,6 @@
 ﻿using Mealy.Persistence.Common.Converters;
 using Mealy.Persistence.Meals.Converters;
+using Mealy.Persistence.Plans.Converters;
 using Mealy.Persistence.Products.Converters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -26,6 +27,7 @@ public sealed class MealyDbContext : DbContext
     builder.ConfigureCommonConventions();
     builder.ConfigureMealConventions();
     builder.ConfigureProductConventions();
+    builder.ConfigurePlanConventions();
     
     base.ConfigureConventions(builder);
   }

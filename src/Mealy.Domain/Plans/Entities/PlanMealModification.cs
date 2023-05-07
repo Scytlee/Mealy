@@ -16,6 +16,8 @@ public class PlanMealModification : Entity<PlanMealModificationId>
   public MealIngredientId MealIngredientId { get; set; }
   public ProductId? NewIngredientId { get; set; }
   public ProductAmount? Amount { get; set; }
+  
+  private PlanMealModification() : base(default) {}
 
   public PlanMealModification(
     PlanMealModificationId id,

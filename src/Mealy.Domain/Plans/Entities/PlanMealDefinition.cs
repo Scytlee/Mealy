@@ -17,6 +17,8 @@ public sealed class PlanMealDefinition : Entity<PlanMealDefinitionId>
   public Weekdays? Weekdays { get; set; }
   public DateOnly? StartDate { get; set; }
   public DateOnly? EndDate { get; set; }
+  
+  private PlanMealDefinition() : base(default) {}
 
   public PlanMealDefinition(
     PlanMealDefinitionId id, 

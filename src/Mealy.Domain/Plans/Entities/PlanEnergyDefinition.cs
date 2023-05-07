@@ -13,6 +13,8 @@ public sealed class PlanEnergyDefinition : Entity<PlanEnergyDefinitionId>
   public Weekdays? Weekdays { get; set; }
   public DateOnly? StartDate { get; set; }
   public DateOnly? EndDate { get; set; }
+  
+  private PlanEnergyDefinition() : base(default) {}
 
   public PlanEnergyDefinition(
     PlanEnergyDefinitionId id, 

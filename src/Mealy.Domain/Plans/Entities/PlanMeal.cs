@@ -8,23 +8,28 @@ namespace Mealy.Domain.Plans.Entities;
 
 public sealed class PlanMeal : Entity<PlanMealId>
 {
-  public PlanMealDefinition PlanMealDefinition { get; set; }
-  public PlanMealDefinitionId PlanMealDefinitionId { get; set; }
+  private readonly List<PlanMealModification> _modifications = new();
+
+  public PlanId PlanId { get; set; }
+  public EntityVersion PlanVersion { get; set; }
   public DateOnly Date { get; set; }
   public Meal Meal { get; set; }
   public MealId MealId { get; set; }
   public EntityVersion MealVersion { get; set; }
   public EnergyAmount EnergyAmount { get; set; }
+  public IReadOnlyList<PlanMealModification> Modifications => _modifications;
+  
+  private PlanMeal() : base(default) {}
 
   public PlanMeal(
     PlanMealId id, 
-    PlanMealDefinition planMealDefinition,
+    Plan plan,
     DateOnly date, 
     Meal meal, 
     EnergyAmount energyAmount) : base(id)
   {
-    PlanMealDefinition = planMealDefinition;
-    PlanMealDefinitionId = planMealDefinition.Id;
+    PlanId = plan.Id;
+    PlanVersion = plan.Version;
     Date = date;
     Meal = meal;
     MealId = meal.Id;
