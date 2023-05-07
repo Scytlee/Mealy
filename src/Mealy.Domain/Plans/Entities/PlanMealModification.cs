@@ -2,6 +2,7 @@
 using Mealy.Domain.Common.ValueObjects;
 using Mealy.Domain.Meals.Entities;
 using Mealy.Domain.Meals.ValueObjects;
+using Mealy.Domain.Plans.Enums;
 using Mealy.Domain.Plans.ValueObjects;
 using Mealy.Domain.Products.Entities;
 using Mealy.Domain.Products.ValueObjects;

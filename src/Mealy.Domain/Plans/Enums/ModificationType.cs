@@ -1,4 +1,4 @@
-﻿namespace Mealy.Domain.Plans;
+﻿namespace Mealy.Domain.Plans.Enums;
 
 public enum ModificationType
 {
