@@ -8,12 +8,14 @@ internal static class CommonConverterExtensions
   internal static void ConfigureCommonConventions(this ModelConfigurationBuilder builder)
   {
     builder.Properties<EnergyAmount>()
-           .HaveConversion<EnergyAmountConverter>();
+           .HaveConversion<EnergyAmountConverter>()
+           .HaveColumnType("decimal(9,4)");
     
     builder.Properties<EntityVersion>()
            .HaveConversion<EntityVersionConverter>();
     
     builder.Properties<ProductAmount>()
-           .HaveConversion<ProductAmountConverter>();
+           .HaveConversion<ProductAmountConverter>()
+           .HaveColumnType("decimal(9,4)");
   }
 }
