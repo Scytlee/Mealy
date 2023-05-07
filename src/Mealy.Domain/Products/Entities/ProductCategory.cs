@@ -7,7 +7,7 @@ public sealed class ProductCategory : Entity<ProductCategoryId>
 {
   public ProductCategoryName Name { get; private set; }
   public bool IncludeInShoppingLists { get; private set; }
-  
+
   public ProductCategory(
     ProductCategoryId id, 
     ProductCategoryName name, 

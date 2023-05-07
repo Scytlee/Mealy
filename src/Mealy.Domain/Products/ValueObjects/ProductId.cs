@@ -4,5 +4,5 @@ namespace Mealy.Domain.Products.ValueObjects;
 
 public sealed class ProductId : ValueObject<long>, IEntityPrimaryKey
 {
-  private ProductId(long value) : base(value) {}
+  public ProductId(long value) : base(value) {}
 }

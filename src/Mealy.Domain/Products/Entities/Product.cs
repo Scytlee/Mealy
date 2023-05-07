@@ -11,6 +11,11 @@ public sealed class Product : Entity<ProductId>
   public ProductCategory Category { get; private set; }
   public EnergyAmount EnergyAmountInKcal { get; private set; }
   public bool IncludeInShoppingLists { get; private set; }
+
+  private Product() : base(null)
+  {
+    // External mapping
+  }
   
   public Product(
     ProductId id, 
