@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Mealy.Persistence.Common.Converters;
+using Mealy.Persistence.Meals.Converters;
+using Mealy.Persistence.Products.Converters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -19,6 +22,10 @@ public sealed class MealyDbContext : DbContext
     builder.Properties<TimeOnly>()
            .HaveConversion<TimeOnlyConverter>()
            .HaveColumnType("time");
+    
+    builder.ConfigureCommonConventions();
+    builder.ConfigureMealConventions();
+    builder.ConfigureProductConventions();
     
     base.ConfigureConventions(builder);
   }
