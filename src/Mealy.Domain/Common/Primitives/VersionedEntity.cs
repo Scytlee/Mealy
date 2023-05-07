@@ -41,13 +41,13 @@ public abstract class VersionedEntity<TPrimaryKey> : Entity<TPrimaryKey>, IEquat
       return false;
     }
 
-    if (obj is not VersionedEntity<TPrimaryKey> entity)
+    if (obj is not VersionedEntity<TPrimaryKey> other)
     {
       return false;
     }
 
-    return Id == entity.Id && Version == entity.Version;
+    return Id == other.Id && Version == other.Version;
   }
 
-  public override int GetHashCode() => HashCode.Combine(Id, Version) * 37;
+  public override int GetHashCode() => HashCode.Combine(base.GetHashCode(), Version);
 }
