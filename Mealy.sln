@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mealy.Application", "src\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mealy.Persistence", "src\Mealy.Persistence\Mealy.Persistence.csproj", "{A2AB2DD5-F6B0-496C-B844-51D2FE8B6E9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mealy.ConsoleApp", "src\Mealy.ConsoleApp\Mealy.ConsoleApp.csproj", "{89BD1440-E016-4FFD-A90E-7504C9A5CE8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,7 @@ Global
 		{100E6124-06D5-4BE3-8437-217334E2DC2B} = {4343F021-7649-4538-A91D-ECAA6A56026E}
 		{9EB672BF-25AB-43A2-899A-CF683BC4547D} = {4343F021-7649-4538-A91D-ECAA6A56026E}
 		{A2AB2DD5-F6B0-496C-B844-51D2FE8B6E9A} = {4343F021-7649-4538-A91D-ECAA6A56026E}
+		{89BD1440-E016-4FFD-A90E-7504C9A5CE8A} = {4343F021-7649-4538-A91D-ECAA6A56026E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{100E6124-06D5-4BE3-8437-217334E2DC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +36,9 @@ Global
 		{A2AB2DD5-F6B0-496C-B844-51D2FE8B6E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2AB2DD5-F6B0-496C-B844-51D2FE8B6E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2AB2DD5-F6B0-496C-B844-51D2FE8B6E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89BD1440-E016-4FFD-A90E-7504C9A5CE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BD1440-E016-4FFD-A90E-7504C9A5CE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BD1440-E016-4FFD-A90E-7504C9A5CE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BD1440-E016-4FFD-A90E-7504C9A5CE8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
