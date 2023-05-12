@@ -1,5 +1,6 @@
-﻿using Mealy.Application.Products.Queries.GetProducts;
+﻿using Mealy.Application.Products.Queries.GetProductById;
 using Mealy.Application.Products.Repositories;
+using Mealy.Domain.Products.ValueObjects;
 using Mealy.Persistence;
 using Mealy.Persistence.Products.Repositories;
 using MediatR;
@@ -28,6 +29,6 @@ var host = Host.CreateDefaultBuilder(args)
 var mediator = host.Services.GetRequiredService<ISender>();
 
 var stopwatch = Stopwatch.StartNew();
-await mediator.Send(new GetProductsQuery());
+await mediator.Send(new GetProductByIdQuery(new ProductId(1)));
 stopwatch.Stop();
 Console.WriteLine(stopwatch.ElapsedMilliseconds);

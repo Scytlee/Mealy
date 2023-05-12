@@ -3,9 +3,9 @@ using Mealy.Domain.Products.ValueObjects;
 
 namespace Mealy.Application.Products.Models;
 
-public sealed record ProductShallowModel(
+public sealed record ProductFullModel(
   ProductId Id, 
   ProductName Name, 
-  ProductCategoryName Category, 
+  ProductCategoryModel Category, 
   EnergyAmount EnergyAmountInKcal,
   bool IncludeInShoppingLists);
