@@ -4,7 +4,7 @@ using Mealy.Domain.Common.Validation;
 
 namespace Mealy.Domain.Common.ValueObjects;
 
-public sealed class ProductAmount : ValueObject<double>
+public sealed record ProductAmount : ValueObject<double>
 {
   private ProductAmount(double value) : base(value) {}
   

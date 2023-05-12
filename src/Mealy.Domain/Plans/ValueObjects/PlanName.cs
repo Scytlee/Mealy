@@ -4,7 +4,7 @@ using Mealy.Domain.Plans.Errors;
 
 namespace Mealy.Domain.Plans.ValueObjects;
 
-public sealed class PlanName : ValueObject<string>
+public sealed record PlanName : ValueObject<string>
 {
   public const int MaxLength = 100;
   

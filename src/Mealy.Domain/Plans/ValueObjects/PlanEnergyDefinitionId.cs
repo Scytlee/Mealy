@@ -2,7 +2,4 @@
 
 namespace Mealy.Domain.Plans.ValueObjects;
 
-public sealed class PlanEnergyDefinitionId : ValueObject<long>, IEntityPrimaryKey
-{
-  public PlanEnergyDefinitionId(long value) : base(value) {}
-}
+public sealed record PlanEnergyDefinitionId(long Value) : ValueObject<long>(Value), IEntityPrimaryKey;

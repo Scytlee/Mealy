@@ -4,7 +4,7 @@ using Mealy.Domain.Plans.Errors;
 
 namespace Mealy.Domain.Plans.ValueObjects;
 
-public sealed class EnergyIntake : ValueObject<int>
+public sealed record EnergyIntake : ValueObject<int>
 {
   private EnergyIntake(int value) : base(value) {}
   

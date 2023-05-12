@@ -2,7 +2,4 @@
 
 namespace Mealy.Domain.ShoppingLists.ValueObjects;
 
-public sealed class ShoppingListId : ValueObject<long>, IEntityPrimaryKey
-{
-  public ShoppingListId(long value) : base(value) {}
-}
+public sealed record ShoppingListId(long Value) : ValueObject<long>(Value), IEntityPrimaryKey;

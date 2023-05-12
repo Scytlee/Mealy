@@ -2,7 +2,4 @@
 
 namespace Mealy.Domain.Meals.ValueObjects;
 
-public sealed class MealTypeId : ValueObject<long>, IEntityPrimaryKey
-{
-  public MealTypeId(long value) : base(value) {}
-}
+public sealed record MealTypeId(long Value) : ValueObject<long>(Value), IEntityPrimaryKey;

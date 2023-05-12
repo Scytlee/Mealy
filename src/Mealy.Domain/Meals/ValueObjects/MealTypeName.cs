@@ -4,7 +4,7 @@ using Mealy.Domain.Meals.Errors;
 
 namespace Mealy.Domain.Meals.ValueObjects;
 
-public sealed class MealTypeName : ValueObject<string>
+public sealed record MealTypeName : ValueObject<string>
 {
   public const int MaxLength = 50;
 

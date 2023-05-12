@@ -4,7 +4,7 @@ using Mealy.Domain.Products.Errors;
 
 namespace Mealy.Domain.Products.ValueObjects;
 
-public class ProductName : ValueObject<string>
+public sealed record ProductName : ValueObject<string>
 {
   public const int MaxLength = 50;
 

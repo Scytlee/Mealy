@@ -4,7 +4,7 @@ using Mealy.Domain.Common.Validation;
 
 namespace Mealy.Domain.Common.ValueObjects;
 
-public sealed class EntityVersion : ValueObject<int>
+public sealed record EntityVersion : ValueObject<int>
 {
   private EntityVersion(int value) : base(value) {}
   
