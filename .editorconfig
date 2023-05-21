@@ -1,0 +1,50 @@
+root = true
+
+[*.cs]
+indent_size = 4
+indent_style = space
+tab_width = 4
+end_of_line = crlf
+insert_final_newline = true
+
+# StyleCop.Analyzers
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# SA1200: Using directives must be placed correctly
+dotnet_diagnostic.SA1200.severity = none
+
+# SA1309: Field names must not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
+# SA1502: Element must not be on a single line
+dotnet_diagnostic.SA1502.severity = none
+
+# SA1600: Elements must be documented
+dotnet_diagnostic.SA1600.severity = none
+
+# SA1633: File must have header
+dotnet_diagnostic.SA1633.severity = none
+
+# SonarAnalyzer.CSharp
+
+# S1481: Unused local variables should be removed
+dotnet_diagnostic.S1481.severity = none
+
+# S2094: Remove this empty record, write its code or make it an interface
+dotnet_diagnostic.S2094.severity = none
+
+# S4487: Remove this unread private field or refactor the code to use its value
+dotnet_diagnostic.S4487.severity = none
+
+# NET.CodeAnalyzers
+
+# CA1040: Avoid empty interfaces
+dotnet_diagnostic.CA1040.severity = none
+
+# CA1062: Validate arguments of public methods
+dotnet_diagnostic.CA1062.severity = none
+
+# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.CA2007.severity = none
