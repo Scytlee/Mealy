@@ -9,25 +9,85 @@ insert_final_newline = true
 
 # StyleCop.Analyzers
 
+# SA1003: Symbols must be spaced correctly
+dotnet_diagnostic.SA1003.severity = none
+
+# SA1005: Single line comments must begin with single space
+dotnet_diagnostic.SA1005.severity = none
+
+# SA1009: Closing parenthesis must be spaced correctly
+dotnet_diagnostic.SA1009.severity = none
+
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
+
+# SA1108: Block statements must not contain embedded comments
+dotnet_diagnostic.SA1108.severity = none
+
+# SA1116: Split parameters must start on line after declaration
+dotnet_diagnostic.SA1116.severity = none
+
+# SA1117: Parameters must be on same line or separate lines
+dotnet_diagnostic.SA1117.severity = none
+
+# SA1118: Parameter must not span multiple lines
+dotnet_diagnostic.SA1118.severity = none
+
+# SA1128: Put constructor initializers on their own line
+dotnet_diagnostic.SA1128.severity = none
 
 # SA1200: Using directives must be placed correctly
 dotnet_diagnostic.SA1200.severity = none
 
+# SA1202: Elements must be ordered by access
+dotnet_diagnostic.SA1202.severity = none
+
+# SA1204: Static elements must appear before instance elements
+dotnet_diagnostic.SA1204.severity = none
+
+# SA1300: Element must begin with upper-case letter
+dotnet_diagnostic.SA1300.severity = none
+
 # SA1309: Field names must not begin with underscore
 dotnet_diagnostic.SA1309.severity = none
+
+# SA1402: File may only contain a single type
+dotnet_diagnostic.SA1402.severity = none
+
+# SA1407: Arithmetic expressions must declare precedence
+dotnet_diagnostic.SA1407.severity = none
+
+# SA1413: Use trailing comma in multi-line initializers
+dotnet_diagnostic.SA1413.severity = none
 
 # SA1502: Element must not be on a single line
 dotnet_diagnostic.SA1502.severity = none
 
+# SA1515: Single-line comment must be preceded by blank line
+dotnet_diagnostic.SA1515.severity = none
+
+# SA1516: Elements must be separated by blank line
+dotnet_diagnostic.SA1516.severity = none
+
 # SA1600: Elements must be documented
 dotnet_diagnostic.SA1600.severity = none
+
+# SA1602: Enumeration items must be documented
+dotnet_diagnostic.SA1602.severity = suggestion
 
 # SA1633: File must have header
 dotnet_diagnostic.SA1633.severity = none
 
+# SA1649: File name must match first type name
+dotnet_diagnostic.SA1649.severity = none
+
 # SonarAnalyzer.CSharp
+
+# S101: Types should be named in PascalCase
+dotnet_diagnostic.S101.severity = none
+
+# S1135: Track uses of "TODO" tags
+dotnet_diagnostic.S1135.severity = none
 
 # S1481: Unused local variables should be removed
 dotnet_diagnostic.S1481.severity = none
@@ -46,5 +106,14 @@ dotnet_diagnostic.CA1040.severity = none
 # CA1062: Validate arguments of public methods
 dotnet_diagnostic.CA1062.severity = none
 
+# CA1716: Identifiers should not match keywords
+dotnet_diagnostic.CA1716.severity = none
+
+# CA1848: Use the LoggerMessage delegates
+dotnet_diagnostic.CA1848.severity = none
+
 # CA2007: Consider calling ConfigureAwait on the awaited task
 dotnet_diagnostic.CA2007.severity = none
+
+# CA5394: Do not use insecure randomness
+dotnet_diagnostic.CA5394.severity = suggestion
